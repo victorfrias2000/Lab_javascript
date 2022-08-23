@@ -32,7 +32,7 @@ function validar(formulario) {
   if (!correo.test(formulario.email.value)) {
     document.getElementById("errorEmail").innerText = "Email Incorrecto";
     formulario.email.focus();
-
+ww
     return false;
   }
   //validar campo contrasena no este vacio

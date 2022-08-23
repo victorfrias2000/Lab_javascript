@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo</title>
+</head>
+
+<body>
+    <form>
+        <p>
+            <label>País</label>
+            <select name="pais" id="pais">
+                <option value="">Seleccione</option>
+                <option value="RD">DOMINICAN REPUBLIC</option>
+                <option value="AF">Afganistán</option>
+                <option value="AL">Albania</option>
+                <option value="DE">Alemania</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Visitar" onclick="return visitaPais(this.form)"><br><br>
+            <button onclick="alert()">Cancelar</button><br><br>
+            <button id="boton-aceptar">Aceptar</button><br><br>
+            <button onclick="conectar()">Conectar</button><span id="mensaje"></span>
+        </p>
+
+        <div>El ultimo país visitado es: <span id="ultimoPaisVisitado"></span></div>
+    </form>
+    <script src="js/validarLocalStore.js"></script>
+</body>
+
+</html>

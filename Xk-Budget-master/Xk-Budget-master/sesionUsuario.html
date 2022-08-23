@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var email = document.getElementById("txtCorreo").value;
+        var password = document.getElementById("textContrasena").value;
+
+        function validarLogin() {
+           if (email == "victor" && password == "123") {
+            alert("USUARIO Y PASSWORD VALIDOS")
+           } else {
+            alert("VERIFIQUE SUS DATOS")
+           }
+        }
+
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="text" placeholder="ingrese correo electronico" id="txtCorreo"><br>
+        <input type="text" placeholder="ingrese la contrasena" id="textContrasena"><br>
+        <input onclick="validarLogin()" type="button" value="ingresar" id="btnIngresar">
+    </form>
+
+ 
+</body>
+
+</html>
