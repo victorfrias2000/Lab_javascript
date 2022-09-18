@@ -1,0 +1,12 @@
+var canvas = document.getElementById("lienzo");
+var context = canvas.getContext("2d");
+context.fillStyle = "#000000";
+context.beginPath();
+context.arc(100, 100, 60, 0, 2 * Math.PI);
+context.fill();
+context.beginPath();
+context.arc(40, 40, 30, 0, 2 * Math.PI);
+context.fill();
+context.beginPath();
+context.arc(160, 40, 30, 0, 2 * Math.PI);
+context.fill();
